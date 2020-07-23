@@ -1,0 +1,254 @@
+/* Définition des polices personnalisées */
+
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+section h2, footer h2, nav a
+{
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+/* Header */
+
+header
+{
+    background: url('../images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+header h2
+{
+    font-family: 'Dayrom', serif;
+    font-size: 4em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    text-align: center;
+}
+
+header h3
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+img
+{
+    max-width: 100% ;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: yellow;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    background-color: grey;
+    font-family: Dayrom, Arial, sans-serif;
+    color: white;
+}
+
+article
+{
+    border: 2px solid yellow;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 2px black;
+    /*  ce qui manque de la_saga.html: */
+    margin-right: auto;
+    flex: 3;
+}
+/*      ce qui a été ajouter sur la _saga.html: article p       */
+article p
+{
+    font-size: 1.0em;
+}
+
+
+h2
+{
+    text-align: center;
+    box-shadow: 6px 6px 6px 6px black;
+    border-radius: 15px / 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: yellow;
+}
+
+h3
+{
+    text-align: center;
+    color: yellow;
+}
+
+.bouquin
+{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.ime
+{
+
+    width: 100%;
+    margin: 15px;
+    padding: auto;
+}
+.intro
+{
+    width: 60%;
+    text-align: justify;
+    margin-right: 20px;
+    padding: auto;
+    margin: auto;
+}
+
+.logo
+{
+    text-align: center;
+}
+
+.tome
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+iframe
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5px;
+}
+
+/* Footer */
+
+footer
+{
+    
+    background: url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
+    padding-top: 10px;
+    text-align: center;
+    color: yellow;
+}
+
+.social
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*      code css pour les petits écrans         */
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+
+    nav a
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+
+    
+    
+    article
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+
+    iframe
+    {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+    }
+
+    .bouquin
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ime
+    {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+    }
+
+}

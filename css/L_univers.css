@@ -1,31 +1,38 @@
 /* Définition des polices personnalisées */
 
 
-@font-face
-{
+@font-face {
     font-family: 'Dayrom';
     src: url('polices/dayrom.eot');
     src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         url('polices/dayrom.woff') format('woff'),
-         url('polices/dayrom.ttf') format('truetype'),
-         url('polices/dayrom.svg#Dayrom') format('svg');
+        url('polices/dayrom.woff') format('woff'),
+        url('polices/dayrom.ttf') format('truetype'),
+        url('polices/dayrom.svg#Dayrom') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
+/* création de la barre de progresssion */
+#progress {
+    background-color: yellow;
+    height: 3px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
 
 /* Header */
 
-header
-{
+header {
     background: url('../images/separateur.png') repeat-x bottom;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-header h2
-{
+header h2 {
     font-family: 'Dayrom', serif;
     font-size: 4em;
     font-weight: normal;
@@ -33,43 +40,37 @@ header h2
     text-align: center;
 }
 
-header h3
-{
+header h3 {
     font-family: Dayrom, serif;
     font-size: 1.1em;
     margin-top: 0px;
     font-weight: normal;
 }
 
-img
-{
-    max-width: 100% ;
+img {
+    max-width: 100%;
 }
 
 
 /* Navigation */
 
-nav ul
-{
+nav ul {
     list-style-type: none;
     display: flex;
 }
 
-nav li
-{
+nav li {
     margin-right: 15px;
 }
 
-nav a
-{
+nav a {
     font-size: 1.3em;
     color: yellow;
     padding-bottom: 3px;
     text-decoration: none;
 }
 
-nav a:hover
-{
+nav a:hover {
     color: #760001;
     border-bottom: 3px solid #760001;
 }
@@ -77,29 +78,27 @@ nav a:hover
 
 /* Corps */
 
-body
-{
+body {
     background-color: grey;
     font-family: Dayrom, Arial, sans-serif;
     color: white;
 }
 
-section h2, footer h2, nav a
-{
+section h2,
+footer h2,
+nav a {
     font-family: serif;
     font-weight: normal;
     text-transform: uppercase;
 }
 
 
-h3 
-{
+h3 {
     color: yellow;
     text-align: center;
 }
 
-h2
-{
+h2 {
     text-align: center;
     box-shadow: 6px 6px 6px 6px black;
     border-radius: 15px / 5px;
@@ -108,41 +107,36 @@ h2
     color: yellow;
 }
 
-        /*      carte + texte réunie      */
-.contenu
-{
+/*      carte + texte réunie      */
+.contenu {
     width: 100%;
     display: flex;
     margin: auto;
     padding: auto;
 }
 
-.carte
-{
+.carte {
 
     width: 100%;
     margin: auto;
     padding: auto;
 }
 
-.intro
-{
+.intro {
     width: 100%;
     text-align: justify;
     margin: auto;
     padding: 100px;
 }
 
-article img
-{
+article img {
     max-width: 100%;
     margin: auto;
     padding: 30px;
 }
 
-            /*  bordure article    */
-article
-{
+/*  bordure article    */
+article {
     border: 0px inset black;
     border-radius: 15px;
     box-shadow: 10px 10px 10px 2px black;
@@ -150,72 +144,62 @@ article
 }
 
 
-        /*          Langue + alphabet          */
-.alphabet, .langues, .calendrier
-{
+/*          Langue + alphabet          */
+.alphabet,
+.langues,
+.calendrier {
     text-align: center;
 }
 
-.explication
-{
+.explication {
     text-align: justify;
     margin: 20px;
     padding: auto;
 }
 
-            /* Footer */
+/* Footer */
 
-footer
-{
+footer {
     background: url('../images/separateur.png') repeat-x top, url('../images/ombre.png') repeat-x top;
     padding-top: 10px;
     text-align: center;
     color: yellow;
 }
 
-.social
-{
+.social {
     display: flex;
     justify-content: center;
 }
 
 /*      code css pour les petits écrans         */
 
-@media all and (max-width: 1024px)
-{
-    #bloc_page
-    {
+@media all and (max-width: 1024px) {
+    #bloc_page {
         width: auto;
     }
 
-    nav
-    {
+    nav {
         width: auto;
         text-align: left;
     }
 
-    nav ul
-    {
+    nav ul {
         flex-direction: column;
     }
 
-    nav li
-    {
+    nav li {
         padding-left: 4px;
     }
 
-    nav a
-    {
+    nav a {
         font-size: 1.1em;
     }
 
-    nav a:hover
-    {
+    nav a:hover {
         border-bottom: 0;
     }
 
-    .contenu
-    {
+    .contenu {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -223,22 +207,20 @@ footer
 
     }
 
-    .carte
-    {
+    .carte {
 
         width: 85%;
         margin: 10px;
         padding: 1px;
     }
 
-    .intro
-    {
+    .intro {
         width: 85%;
         text-align: justify;
         margin: 20px;
         padding: 20px;
     }
 
-    
-    
+
+
 }

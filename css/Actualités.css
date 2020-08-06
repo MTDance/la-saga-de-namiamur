@@ -12,6 +12,17 @@
     font-style: normal;
 }
 
+/* création de la barre de progresssion */
+#progress{
+    background-color: yellow;
+    height: 3px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
 /* Eléments principaux de la page */
 
 body {
